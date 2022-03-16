@@ -9,5 +9,6 @@
         public int Count();
         public void ShowAll();
         public T GetByIndex(int index);
+        public T Pop();
     }
 }

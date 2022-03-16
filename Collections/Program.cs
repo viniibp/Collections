@@ -13,5 +13,6 @@ list.ShowAll();
 Console.WriteLine("Size: " + list.Count());
 Console.WriteLine("ByIndex: " + list.GetByIndex(1));
 Console.WriteLine("Contains: " + list.Contains(4));
-Console.WriteLine("Remove: " + list.Remove(0));
+Console.WriteLine("Remove: " + list.Remove(5));
+Console.WriteLine("Pop: " + list.Pop());
 list.ShowAll();

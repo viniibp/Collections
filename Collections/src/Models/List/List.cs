@@ -90,5 +90,15 @@ namespace Collections.src.Models.List
             }
             return aux.Show();
         }
+
+        public T Pop()
+        {
+            var aux = Tail;
+            while (aux.Next.Next != null) aux = aux.Next;
+            T dump = aux.Next.Show();
+            Head = aux;
+            Head.Next = null;
+            return dump;
+        }
     }
 }
