@@ -53,7 +53,16 @@ namespace Collections.src.Models.List
 
         public bool Remove(T value)
         {
-            throw new NotImplementedException();
+            var aux = Tail;
+            while (aux != null)
+            {
+                if (aux.Next.Show().Equals(value)){
+                    aux.Next = aux.Next.Next;
+                    return true;
+                }
+                aux = aux.Next;
+            }
+            return false;
         }
 
         public void ShowAll()
